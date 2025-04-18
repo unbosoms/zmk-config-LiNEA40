@@ -1,0 +1,11 @@
+if SHIELD_LiNEA40_RIGHT
+    config ZMK_KEYBOARD_NAME
+        default "LiNEA40"
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+endif
+
+if SHIELD_LiNEA40_LEFT || SHIELD_LiNEA40_RIGHT
+    config ZMK_SPLIT
+        default y
+endif

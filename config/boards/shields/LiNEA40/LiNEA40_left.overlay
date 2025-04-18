@@ -1,0 +1,16 @@
+#include "LiNEA40.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&xiao_d 10 GPIO_ACTIVE_HIGH> //col0-D10
+        , <&xiao_d 9 GPIO_ACTIVE_HIGH>  //col1-D9
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>  //col2-D8
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH>  //col3-D7
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>  //col4-NFC2
+        , <&gpio0 9 GPIO_ACTIVE_HIGH>   //col5-NFC1
+        ;
+};
+
+&left_encoder {
+   status = "okay";
+};

@@ -1,0 +1,12 @@
+# This file generates the GitHub Actions matrix.
+# For simple board + shield combinations, add them to the top level board and
+# shield arrays, for more control, add individual board + shield combinations
+# to the `include` property.
+board: ["seeeduino_xiao_ble"]  # 使用するマイコンボード
+shield: ["LiNEA40_R", "LiNEA40_L", "settings_reset"]  # シールド（キーボードの左右）
+
+# include:
+#   - board: nice_nano_v2
+#     shield: corne_left
+#     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+#     artifact-name: corne_central

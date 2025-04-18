@@ -3,7 +3,7 @@
 # shield arrays, for more control, add individual board + shield combinations
 # to the `include` property.
 board: ["seeeduino_xiao_ble"]  # 使用するマイコンボード
-shield: ["LiNEA40_R", "LiNEA40_L", "settings_reset"]  # シールド（キーボードの左右）
+shield: ["LiNEA40_right", "LiNEA40_left", "settings_reset"]  # シールド（キーボードの左右）
 
 # include:
 #   - board: nice_nano_v2

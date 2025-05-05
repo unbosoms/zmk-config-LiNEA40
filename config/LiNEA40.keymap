@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -103,12 +103,6 @@
     };
 
     behaviors {
-        re_kp: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
-
         mouse_scrl: mouse_wheel_scrl {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
@@ -153,7 +147,7 @@
 &trans             &trans        &trans        &trans        &trans         &trans    &trans  &trans                               &trans        &trans                &trans
             >;
 
-            sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&none>;
         };
 
         //3

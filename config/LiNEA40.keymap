@@ -26,11 +26,19 @@
 
 //mouse scroll
 
+//&msc {
+//    delay-ms = <3>;
+//    trigger-period-ms = <3>;
+//    time-to-max-speed-ms = <150>;
+//    acceleration-exponent = <2>;
+//};
+
+//舞うるスクロールを遅くするために設定変更
 &msc {
-    delay-ms = <3>;
-    trigger-period-ms = <3>;
-    time-to-max-speed-ms = <150>;
-    acceleration-exponent = <2>;
+    delay-ms = <5>;
+    trigger-period-ms = <5>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
 };
 
 / {

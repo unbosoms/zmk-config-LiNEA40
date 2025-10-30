@@ -65,8 +65,8 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_wheel_scaler 1 3>,
-            //スクロールを1/3倍速にする,,,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,
+            //スクロールを1/3倍速にする,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -82,17 +82,17 @@
 
         RightClick {
             bindings = <&mkp MB2>;
-            key-positions = <18 17>;
+            key-positions = <7 8>;
         };
 
         PrevClick {
             bindings = <&mkp MB4>;
-            key-positions = <27 28>;
+            key-positions = <27 26>;
         };
 
         ClickNext {
             bindings = <&mkp MB5>;
-            key-positions = <26 27>;
+            key-positions = <27 28>;
         };
 
         LeftClick {
@@ -196,8 +196,8 @@
 
         WIRELESS {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &trans          &studio_unlock  &trans    &trans  &mkp MB2
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans          &mkp MB1  &trans  &trans
+&trans        &trans        &trans        &trans        &trans                               &trans          &studio_unlock  &trans    &trans  &mkp MB2
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &trans          &trans          &mkp MB1  &trans  &trans
 &trans        &trans        &trans        &trans        &trans                               &trans          &trans          &mo 5     &trans  &bt BT_CLR
 &trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                  &trans    &trans  &bt BT_CLR_ALL
             >;

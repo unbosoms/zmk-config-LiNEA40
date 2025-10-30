@@ -25,15 +25,14 @@
 };
 
 //mouse scroll
-
 //&msc {
 //    delay-ms = <3>;
 //    trigger-period-ms = <3>;
 //    time-to-max-speed-ms = <150>;
 //    acceleration-exponent = <2>;
 //};
-
 //マウススクロールを遅くするために設定変更
+
 &msc {
     delay-ms = <10>;
     trigger-period-ms = <10>;
@@ -65,8 +64,9 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_wheel_scaler 1 3>, //スクロールを1/3倍速にする
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,
+            <&zip_wheel_scaler 1 3>,
+            //スクロールを1/3倍速にする,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -75,23 +75,8 @@
     combos {
         compatible = "zmk,combos";
 
-        ZenkakuHankaku {
-            bindings = <&kp GRAVE>;
-            key-positions = <11 12>;
-        };
-
-        DeleteKey {
-            bindings = <&kp DEL>;
-            key-positions = <7 8>;
-        };
-
-        InsertKey {
-            bindings = <&kp INS>;
-            key-positions = <6 7>;
-        };
-
         CenterClick {
-            bindings = <&mkp MB3>;
+            bindings = <&kp ESCAPE>;
             key-positions = <17 16>;
         };
 
@@ -108,6 +93,11 @@
         ClickNext {
             bindings = <&mkp MB5>;
             key-positions = <26 27>;
+        };
+
+        MB1 {
+            bindings = <&mkp MB1>;
+            key-positions = <7 16>;
         };
     };
 

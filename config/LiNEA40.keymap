@@ -65,8 +65,8 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_wheel_scaler 1 3>,
-            //スクロールを1/3倍速にする,,,,,,,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロールを1/3倍速にする,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -78,30 +78,6 @@
         Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <17 16>;
-            layers = <0>;
-        };
-
-        PrevClick {
-            bindings = <&mkp MB4>;
-            key-positions = <27 26>;
-            layers = <0>;
-        };
-
-        ClickNext {
-            bindings = <&mkp MB5>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-
-        LeftClick {
-            bindings = <&mkp MB1>;
-            key-positions = <26 17>;
-            layers = <0>;
-        };
-
-        RightClick {
-            bindings = <&mkp MB2>;
-            key-positions = <17 18>;
             layers = <0>;
         };
     };

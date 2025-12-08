@@ -65,8 +65,8 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_wheel_scaler 1 3>,
-            //スクロールを1/3倍速にする,,,,,,,,,,,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロールを1/3倍速にする,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -83,6 +83,30 @@
         ESC_fd {
             bindings = <&kp ESCAPE>;
             key-positions = <12 13>;
+        };
+
+        Mouse_Left_Click {
+            bindings = <&mkp MB1>;
+            key-positions = <26 17>;
+            layers = <0>;
+        };
+
+        Mouse_Right_Click {
+            bindings = <&mkp MB2>;
+            key-positions = <17 18>;
+            layers = <0>;
+        };
+
+        Mouse_Previous {
+            bindings = <&mkp MB4>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
+
+        Mouse_Next {
+            bindings = <&mkp MB5>;
+            key-positions = <27 28>;
+            layers = <0>;
         };
     };
 
@@ -144,10 +168,10 @@
 
         CURSOR {
             bindings = <
-&kp F11  &kp F12  &kp INT_MUHENKAN  &kp INT_HENKAN  &kp ESC                     &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(SPACE)  &kp DELETE   &kp BACKSPACE
-&kp F1   &kp F2   &kp F3            &kp F4          &kp F5                      &kp LEFT      &kp DOWN       &kp UP_ARROW   &kp RIGHT    &kp RIGHT_CONTROL
-&kp F6   &kp F7   &kp F8            &kp F9          &kp F10                     &kp HOME      &kp END        &kp PAGE_DOWN  &kp PAGE_UP  &kp RIGHT_ALT
-&trans   &trans   &trans            &trans          &trans   &trans    &kp ESC  &trans                       &trans         &trans       &kp ESC
+&kp F11  &kp F12  &kp INT_MUHENKAN  &kp INT_HENKAN  &kp ESC                     &kp LG(LC(LEFT_BRACE))  &kp LG(RIGHT_BRACE)  &kp LG(SPACE)  &kp DELETE   &kp BACKSPACE
+&kp F1   &kp F2   &kp F3            &kp F4          &kp F5                      &kp LEFT                &kp DOWN             &kp UP_ARROW   &kp RIGHT    &kp RIGHT_CONTROL
+&kp F6   &kp F7   &kp F8            &kp F9          &kp F10                     &kp HOME                &kp END              &kp PAGE_DOWN  &kp PAGE_UP  &kp RIGHT_ALT
+&trans   &trans   &trans            &trans          &trans   &trans    &kp ESC  &trans                                       &trans         &trans       &trans
             >;
         };
 
